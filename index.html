@@ -70,21 +70,14 @@
       gap: 10px;
       padding-bottom: 10px;
       scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none; /* Firefox */
-    }
-    .gallery::-webkit-scrollbar {
-      display: none; /* Chrome, Safari */
     }
     .gallery img {
       flex: 0 0 auto;
       width: 300px;
       border-radius: 8px;
       scroll-snap-align: start;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
     }
     .ratecard, .support {
       background-color: #dceeff;
@@ -216,10 +209,10 @@
     </div>
   </section>
 
-  <section id="Gallery">
+    <section id="Gallery">
     <h2>Gallery</h2>
     <p>Here are some of my cosplay photos. I love bringing characters to life through my costumes and makeup!</p>
-    <div class="Gallery">
+    <div class="gallery">
       <img src="2b.png" alt="2B - Nier Automata">
       <img src="miyabi.png" alt="Miyabi Hoshimi - ZZZ">
       <img src="asuka.png" alt="Asuka Langley Soryu - Evangelion">
