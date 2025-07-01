@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ai's Personal Web</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5faff;
+      color: #2b3a55;
+    }
+    header, footer {
+      background-color: #e6f0ff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ccdfff;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px 40px;
+      background-color: #e6f0ff;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2b3a55;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    nav a:hover {
+      color: #4682b4;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #4682b4;
+    }
+    .about-box {
+      background-color: #dceeff;
+      padding: 25px;
+      border-radius: 12px;
+      line-height: 1.6;
+    }
+    .about-box h3 {
+      margin-top: 0;
+    }
+    .about-box ul {
+      padding-left: 20px;
+    }
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+    }
+    .gallery img {
+      flex: 0 0 auto;
+      width: 300px;
+      border-radius: 8px;
+      scroll-snap-align: start;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .ratecard, .support {
+      background-color: #dceeff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4682b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #36648b;
+    }
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .social-links a {
+      background-color: #3b5998;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .social-links a.tiktok { background-color: #000000; }
+    .social-links a.threads { background-color: #1DA1F2; }
+    .social-links a.instagram { background-color: #d62976; }
+    .social-links a:hover {
+      opacity: 0.8;
+    }
+    footer {
+      position: relative;
+      text-align: center;
+      padding: 20px;
+      background-color: #e6f0ff;
+      color: #2b3a55;
+      margin-top: 40px;
+    }
+    .footer-upload {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      text-align: right;
+    }
+    .footer-upload input[type="file"] {
+      font-size: 0.8em;
+      margin-bottom: 5px;
+    }
+    .footer-upload img {
+      width: 60px;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin-top: 5px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      h2 {
+        font-size: 1.2em;
+      }
+      nav a {
+        font-size: 0.9em;
+      }
+      section {
+        padding: 30px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KYRAA'S PERSONAL WEBSITE</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#galeri">Gallery</a>
+      <a href="#tnc">TnC & Rate Card</a>
+      <a href="#contact">Contact & Support</a>
+    </nav>
+  </header>
+
+  <img src="header.png" alt="Header Ky" class="hero-img">
+
+    <style>
+        .hero-img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+        }
+        @media (max-width: 600px) {
+            .hero-img {
+                max-height: 200px;
+            }
+        }
+    </style>
+
+  <section id="home">
+    <h2>Eyyo ! Kyraa is here (｀・∀・´) !</h2>
+    <p>When I’m not geeking out over circuits and electromagnetic fields, you’ll find me bringing icy villains, battle-hardened warriors, and ‘I-will-end-you’ boss characters to life—because why choose between science and dominance? Obsessed with cats (expect them to photobomb my shoots), 200% done with Ohm’s Law drama, and always down to debate: "Which anime villain could actually survive a black hole?"</p>
+    <h2>And.. Welcome y'all!</h2>
+    <p>This is my personal website as a cosplayer — where you can get to know me better, see my work, and find out how it works.💙</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-box">
+      <p><strong>Nickname:</strong> Kyraa<br>
+      <strong>DOB:</strong> Bogor, 26 April<br>
+      <strong>Nationality:</strong> Indonesia (Chinese Mix)<br>
+      <strong>Language(s):</strong> Bahasa Indonesia, English, Basic Chinese<br>
+      <strong>Height:</strong> 163 cm<br>
+      <strong>Blood Type:</strong> O<br>
+      <strong>Personality:</strong> ENFP</p>
+      <p><strong>Likes:</strong> yupi (the strawberry heart one), earl grey tea, music, physics, cats, foxs, perfume<br>
+      <strong>Dislikes:</strong> celery, sour food, rude people !</p>
+    </div>
+  </section>
+
+  <section id="Gallery">
+    <h2>Gallery</h2>
+    <p>Here are some of my cosplay photos. I love bringing characters to life through my costumes and makeup!</p>
+    <div class="gallery">
+      <img src="2b.png" alt="2B - Nier Automata">
+      <img src="miyabi.png" alt="Miyabi Hoshimi - ZZZ">
+      <img src="asuka.png" alt="Asuka Langley Soryu - Evangelion">
+    </div>
+  </section>
+
+  <section id="tnc">
+    <h2>Terms & Condition + Rate Card</h2>
+    <div class="Terms">
+      <p>Berikut adalah syarat dan ketentuan untuk kerja sama:</p>
+      <ul>
+        <li>Hanya menerima kerja sama yang sesuai dengan karakter dan image aku.</li>
+        <li>Tidak menerima request cosplay dengan character yang terlalu terbuka dan mengarah ke NSFW</li>
+        <li>Harus sopan, profesional, dan jelas brief-nya ya!</li>
+      </ul>
+      <p>Jika ada yang ingin ditanyakan, bisa langsung DM aku di Instagram @kyraaiiraa_ atau email ke kyraaiiraa@gmail.com</p>
+    </div>
+    <div class="ratecard">
+      <p>Untuk collab atau endorse, berikut info dasar yang perlu kamu tahu:</p>
+      <ul>
+        <li>Open for cosplay photoshoot, event appearance, endorsement.</li>
+        <li>Untuk endorse, aku akan posting di feed Instagram dan story.</li>
+        <li>Untuk photoshoot, bisa di studio atau outdoor, sesuai kesepakatan.</li>
+        <li>Untuk event, aku bisa hadir sesuai waktu yang disepakati.</li>
+        <li>Harga bisa disesuaikan sesuai brief & kebutuhan.</li>
+        <li>Harus sopan, profesional, dan jelas brief-nya ya!</li>
+      </ul>
+      <a href="ratecard.pdf" class="btn" target="_blank">Rate Card</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Support</h2>
+    <div class="support">
+      <p>Mau support aku? Bisa langsung klik link Trakteer di bawah 💙💫</p>
+      <a href="https://trakteer.id/kyraaiiraa" class="btn" target="_blank">Dukung di Trakteer</a>
+    
+      <div class="social-links">
+          <a href="https://instagram.com/kyraaiiraa_" class="instagram" target="_blank">Instagram</a>
+          <a href="https://tiktok.com/@kyrainurarea" class="tiktok" target="_blank">TikTok</a>
+          <a href="https://www.threads.com/@kyraaiiraa_" class="threads" target="_blank">Threads</a>
+          <a href="mailto:kyraaiiraa@gmail.com" class="email" target="_blank">Email</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 kopi kanan kyraa 💫</p>
+    <div class="footer-upload">
+      <img src="hehe.jpeg" alt="Footer Ky" class="hero-img">
+    </div>
+  </footer>
+</body>
+</html>
