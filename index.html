@@ -35,7 +35,6 @@
   <section id="gallery" class="py-16 px-6 text-center">
     <h2 class="text-3xl font-semibold mb-6">Gallery</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-      <!-- Masukkan gambar di sini -->
       <img src="asuka.png" class="rounded-xl shadow-md hover:scale-105 transition" alt="Gallery 1">
       <img src="miyabi.png" class="rounded-xl shadow-md hover:scale-105 transition" alt="Gallery 2">
       <img src="2b.png" class="rounded-xl shadow-md hover:scale-105 transition" alt="Gallery 3">
@@ -43,6 +42,32 @@
       <img src="luocha.png" class="rounded-xl shadow-md hover:scale-105 transition" alt="Gallery 5">
     </div>
   </section>
+
+  <section class="max-w-5xl mx-auto px-4">
+  <h2 class="text-2xl font-semibold mb-4 text-center">Cosplay Gallery</h2>
+
+  <!-- Container Scroll -->
+  <div class="flex gap-4 overflow-x-auto scroll-smooth pb-4">
+    <!-- Item -->
+    <div class="relative flex-shrink-0 w-64 h-80 rounded-2xl shadow-lg overflow-hidden group">
+      <img src="gallery1.png" alt="Cosplay 1" 
+           class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+      <!-- Hover Info -->
+      <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-sm p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        Character Name – Event/Year
+      </div>
+    </div>
+    <!-- Item -->
+    <div class="relative flex-shrink-0 w-64 h-80 rounded-2xl shadow-lg overflow-hidden group">
+      <img src="gallery2.png" alt="Cosplay 2" 
+           class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+      <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-sm p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        Another Character – Event/Year
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- TNC & RATE CARD -->
   <section id="tnc" class="py-16 px-6 text-center">
