@@ -1,209 +1,67 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyraa's Personal Web</title>
-    <link rel="icon" href="v.png" type="image/png">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fdf6ec; /* soft cream */
-        color: #1c2a3a; /* dark bluish */
-      }
-      header, footer {
-        background-color: #1c2a3a;
-        padding: 20px;
-        text-align: center;
-        color: #fdf6ec;
-      }
-      .sticky-nav {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        background-color: #1c2a3a;
-      }
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 15px 30px;
-      }
-      nav a {
-        text-decoration: none;
-        color: #fdf6ec;
-        font-weight: bold;
-        padding: 5px 10px;
-        transition: color 0.3s ease, transform 0.2s ease;
-      }
-      nav a:hover {
-        color: #ffdbb5;
-        transform: scale(1.1);
-      }
-      section {
-        padding: 40px 20px;
-        max-width: 900px;
-        margin: auto;
-      }
-      h2 {
-        color: #2b3a55;
-        font-size: 2rem;
-      }
-      .about-box, .ratecard, .support {
-        background-color: #fff3e6;
-        padding: 20px;
-        border-radius: 12px;
-        margin-bottom: 20px;
-      }
-      .gallery {
-        display: flex;
-        overflow-x: auto;
-        gap: 10px;
-        padding-bottom: 10px;
-        scroll-snap-type: x mandatory;
-      }
-      .gallery img {
-        flex: 0 0 auto;
-        width: 300px;
-        border-radius: 8px;
-        scroll-snap-align: start;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        transition: transform 0.2s ease;
-      }
-      .gallery img:hover {
-        transform: scale(1.05);
-      }
-      .btn {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 20px;
-        background-color: #1c2a3a;
-        color: #fdf6ec;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-      }
-      .btn:hover {
-        background-color: #2e435a;
-      }
-      .social-links {
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      .social-links a {
-        padding: 10px 15px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 0.9em;
-        color: #fdf6ec;
-        transition: opacity 0.3s ease;
-      }
-      .social-links a.instagram { background-color: #d62976; }
-      .social-links a.tiktok { background-color: #000; }
-      .social-links a.threads { background-color: #1da1f2; }
-      .social-links a:hover {
-        opacity: 0.8;
-      }
-      footer {
-        margin-top: 40px;
-      }
-      @media (max-width: 600px) {
-        h2 {
-          font-size: 1.5em;
-        }
-        nav {
-          flex-direction: column;
-          gap: 10px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-<header class="sticky top-0 z-50 bg-[#0f1c2e] shadow-md">
-  <nav class="flex justify-between items-center px-6 py-4">
-    <div class="text-2xl font-bold tracking-wide text-[#e2d9c7]">
-      Ai's Cosplay
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ai's Cosplay</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0f1c2e] text-[#e2d9c7] font-sans">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-[#0f1c2e] shadow-md">
+    <nav class="flex justify-between items-center px-6 py-4">
+      <div class="text-2xl font-bold tracking-wide">Ai's Cosplay</div>
+      <ul class="flex gap-6 font-medium">
+        <li><a href="#home" class="hover:text-[#b8a58a] transition">Home</a></li>
+        <li><a href="#about" class="hover:text-[#b8a58a] transition">About Me</a></li>
+        <li><a href="#gallery" class="hover:text-[#b8a58a] transition">Gallery</a></li>
+        <li><a href="#tnc" class="hover:text-[#b8a58a] transition">TnC & Rates</a></li>
+        <li><a href="#contact" class="hover:text-[#b8a58a] transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / COMPILATION -->
+  <section id="home" class="flex flex-col items-center justify-center text-center py-16 px-6">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to My Cosplay World</h1>
+    <p class="text-lg md:text-xl max-w-2xl mb-8">A mini compilation of my favorite cosplay works — representing my passion, creativity, and journey.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl">
+      <img src="/img/cosplay1.jpg" alt="Cosplay 1" class="rounded-2xl shadow-lg hover:scale-105 transition">
+      <img src="/img/cosplay2.jpg" alt="Cosplay 2" class="rounded-2xl shadow-lg hover:scale-105 transition">
+      <img src="/img/cosplay3.jpg" alt="Cosplay 3" class="rounded-2xl shadow-lg hover:scale-105 transition">
     </div>
-    <ul class="flex gap-6 text-[#e2d9c7] font-medium">
-      <li><a href="#home" class="hover:text-[#b8a58a] transition">Home</a></li>
-      <li><a href="#about" class="hover:text-[#b8a58a] transition">About Me</a></li>
-      <li><a href="#gallery" class="hover:text-[#b8a58a] transition">Gallery</a></li>
-      <li><a href="#tnc" class="hover:text-[#b8a58a] transition">TnC & Rates</a></li>
-      <li><a href="#contact" class="hover:text-[#b8a58a] transition">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  </section>
 
-    <section id="home">
-      <h2>Eyyo! Kyraa is here (｀・∀・´)!</h2>
-      <p>When I’m not geeking out over circuits and electromagnetic fields, you’ll find me bringing icy villains, battle-hardened warriors, and ‘I-will-end-you’ boss characters to life — because why choose between science and dominance?</p>
-      <h2>And... Welcome y'all!</h2>
-      <p>This is my personal website as a cosplayer — where you can get to know me better, see my work, and find out how to work with me! 💙</p>
-    </section>
+  <!-- GALLERY -->
+  <section id="gallery" class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-6">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+      <!-- Masukkan gambar di sini -->
+      <img src="/img/gallery1.jpg" class="rounded-xl shadow-md hover:scale-105 transition" alt="Gallery 1">
+      <img src="/img/gallery2.jpg" class="rounded-xl shadow-md hover:scale-105 transition" alt="Gallery 2">
+      <img src="/img/gallery3.jpg" class="rounded-xl shadow-md hover:scale-105 transition" alt="Gallery 3">
+      <img src="/img/gallery4.jpg" class="rounded-xl shadow-md hover:scale-105 transition" alt="Gallery 4">
+    </div>
+  </section>
 
-    <section id="about">
-      <h2>About Me  ༘⋆(≧ᗜ≦)ᯓᡣ𐭩</h2>
-      <div class="about-box">
-        <p><strong>Nickname:</strong> Kyraa<br>
-        <strong>DOB:</strong> Bogor, 26 April<br>
-        <strong>Nationality:</strong> Indonesian<br>
-        <strong>Language(s):</strong> Bahasa Indonesia, English, Basic Chinese<br>
-        <strong>Height:</strong> 163 cm<br>
-        <strong>Blood Type:</strong> O<br>
-        <strong>Personality:</strong> ENFP</p>
-        <p><strong>Likes:</strong> noodles, yupi (strawberry heart), earl grey tea, music, physics, cats, foxes, perfume<br>
-        <strong>Dislikes:</strong> celery, sour food, rude people<br>
-        <strong>Fun Fact(s):</strong> I can’t sleep without music or random YouTube videos. I’m a picky eater but I love soup and noodles!</p>
-      </div>
-    </section>
+  <!-- ABOUT ME -->
+  <section id="about" class="py-16 px-6 text-center bg-[#132238]">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="max-w-3xl mx-auto text-lg">Hi! I'm Ai, a cosplayer who loves to bring characters to life through costumes and storytelling. This space is where I share my passion, works, and connect with fellow fans and collaborators.</p>
+  </section>
 
-    <section id="gallery">
-      <h2>📸 Gallery</h2>
-      <p>A small compilation of my cosplay works. Enjoy the scroll!</p>
-      <div class="gallery">
-        <img src="luocha.png" alt="Luocha - Honkai Star Rail">
-        <img src="misato.png" alt="Misato - Evangelion">
-        <img src="2b.png" alt="2B - Nier Automata">
-        <img src="miyabi.png" alt="Miyabi Hoshimi - ZZZ">
-        <img src="asuka.png" alt="Asuka Langley Soryu - Evangelion">
-      </div>
-    </section>
+  <!-- TNC & RATE CARD -->
+  <section id="tnc" class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Terms & Rates</h2>
+    <p class="max-w-3xl mx-auto">Here you can find my collaboration terms and rate card for cosplay partnerships and projects.</p>
+    <a href="/docs/tnc.pdf" target="_blank" class="inline-block mt-6 px-6 py-3 bg-[#b8a58a] text-[#0f1c2e] rounded-xl shadow hover:scale-105 transition">View Document</a>
+  </section>
 
-    <section id="tnc">
-      <h2>📋 TnC & Rate Card</h2>
-      <div class="ratecard">
-        <p>Terms & conditions for collaboration:</p>
-        <ul>
-          <li>Only accepting projects aligned with my character image.</li>
-          <li>No NSFW or overly revealing cosplay requests.</li>
-          <li>Be polite, professional, and clear with briefs.</li>
-        </ul>
-        <a href="ratecard.pdf" class="btn" target="_blank">💼 Coming Soon</a>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact & Support</h2>
-      <div class="support">
-        <p>Want to support me? Check out my Trakteer and Ganknow pages!</p>
-        <a href="https://trakteer.id/kyraaiiraa" class="btn" target="_blank">💙 Support on Trakteer</a>
-        <a href="https://ganknow.com/kyraaiiraa" class="btn" target="_blank">💙 Support on Ganknow</a>
-        <div class="social-links">
-          <a href="https://instagram.com/kyraaiiraa_" class="instagram" target="_blank">Instagram</a>
-          <a href="https://tiktok.com/@kyrainurarea" class="tiktok" target="_blank">TikTok</a>
-          <a href="https://www.threads.net/@kyraaiiraa_" class="threads" target="_blank">Threads</a>
-          <a href="mailto:kyraaiiraa@gmail.com" class="email" target="_blank">Email</a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Kyraa — All rights reserved 💫</p>
-    </footer>
-  </body>
+  <!-- CONTACT & SUPPORT -->
+  <footer id="contact" class="bg-[#0d1724] py-12 px-6 text-center">
+    <h2 class="text-2xl font-semibold mb-4">Contact & Support</h2>
+    <p class="mb-4">Want to collaborate or support my journey? Reach out to me below!</p>
+    <a href="https://trakteer.id/ai-cosplay" target="_blank" class="inline-block px-6 py-3 bg-[#b8a58a] text-[#0f1c2e] rounded-xl shadow hover:scale-105 transition">Support Me</a>
+  </footer>
+</body>
 </html>
